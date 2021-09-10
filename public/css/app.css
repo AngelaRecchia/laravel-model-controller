@@ -1,5 +1,86 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 70%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  text-transform: uppercase;
+}
+header header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #0282F9;
+}
+header header ul {
+  text-align: right;
+}
+header header ul li {
+  display: inline-block;
+  padding: 5px 0 5px 40px;
+}
+header header ul li i {
+  margin-left: 5px;
+}
+header nav .container {
+  padding: 15px 0;
+  color: #535353;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .container img {
+  width: 80px;
+}
+header nav .container .right {
+  display: flex;
+  align-items: center;
+  flex: auto;
+}
+header nav .container .right ul {
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex: auto;
+  padding: 0 15px 0 30px;
+}
+header nav .container .right ul li .selected {
+  border-bottom: 2px solid #0282F9;
+}
+header nav .container .right #block-search {
+  width: 15%;
+  padding-bottom: 5px;
+  border-bottom: 2.5px solid #0282F9;
+}
+header nav .container .right #block-search input {
+  width: 80%;
+  font-weight: bold;
+  border: none;
+  color: #535353;
+  text-align: right;
+  padding-right: 5px;
+}
+header nav .container .right #block-search input:focus, header nav .container .right #block-search input:active {
+  outline: none;
+}
+
+#jumbo img {
+  max-width: 100vw;
 }
