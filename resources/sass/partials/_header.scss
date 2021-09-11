@@ -70,6 +70,10 @@ header {
     }
 }
 
-#jumbo img {
-    max-width: 100vw;
+#jumbo {
+    height: 300px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
 }
