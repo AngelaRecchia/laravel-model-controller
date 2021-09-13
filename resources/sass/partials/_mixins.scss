@@ -1,10 +1,11 @@
 @mixin button ($bg-color: $blue, $padding, $size) {
     background-color: $bg-color;
-    border: 1px solid $blue;
+    border: 2px solid $blue;
     padding: $padding;
     font-size: $size;
     text-transform: uppercase;
     color: white;
     display: inline-block;
+    
 }
     

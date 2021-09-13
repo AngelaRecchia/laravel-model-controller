@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import 'partials/mixins';
 
 * {
     margin: 0;
@@ -23,4 +24,21 @@ a, a:active, a:visited {
     width: 70%;
     max-width: 1140px;
     margin: auto;
+}
+
+.center {
+    text-align:center;
+}
+
+.button-big {
+    @include button($blue, 10px 20px, 22px); 
+}
+
+.button-medium {
+    @include button($blue, 5px 60px, 14px);
+}
+
+.button-grey {
+    @include button(transparent, 10px, 20px);
+    font-weight: bold;
 }

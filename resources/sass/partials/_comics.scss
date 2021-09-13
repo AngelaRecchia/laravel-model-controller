@@ -1,7 +1,42 @@
 #comics {
     background-color: #1C1C1C;
+    padding-bottom: 20px;
 }
 
 .halfway {
     transform: translateY(-50%);
+}
+
+.comics-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 6);
+    padding: 10px;
+    margin-bottom: -70px;
+}
+
+.comic-poster {
+    height: 50%;
+    overflow: hidden;
+}
+.poster {
+    width: 100%;
+}
+
+.comic-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn-cont {
+    padding-top: 30px;
+}
+
+.button-medium {
+    cursor: pointer;
 }

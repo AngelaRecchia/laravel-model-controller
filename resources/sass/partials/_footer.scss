@@ -1,0 +1,65 @@
+footer {
+    .up {
+        background-image: url("../../img/dc-logo-bg.png"), url('../../img/footer-bg.jpg');
+        background-size: 38%, cover;
+        background-repeat: no-repeat;
+        background-position: 98%, 0px;
+        padding: 20px 0;
+        .site-map {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            .cat {
+                width: 200px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        .title {
+            text-transform: uppercase;
+            font-size: 23px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        li {
+            color: $lightgrey;
+            list-style-type: none;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .rights {
+            color: $lightgrey;
+            a {
+                color: $blue;
+            }
+        }
+    }
+    .bottom {
+        background-color: $grey;
+        .container {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            #social {
+                display: flex;
+                align-items: center;
+               span {
+                text-transform: uppercase;
+                color: $blue;
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 20px;
+                }
+                & > * {
+                    margin: 0 5px;
+                }
+            } 
+        }
+    }
+    
+}
