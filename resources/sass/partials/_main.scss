@@ -3,3 +3,29 @@
 .button-big {
     @include button($blue, 10px 20px, 22px); 
 }
+
+.comics-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 6);
+    padding: 10px;
+    margin-bottom: -70px;
+}
+
+.comic-poster {
+    height: 50%;
+    overflow: hidden;
+}
+.poster {
+    width: 100%;
+}
+
+.comic-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}

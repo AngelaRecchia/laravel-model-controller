@@ -8,9 +8,13 @@
             <div class="button-big bold halfway">Current Series</div>
             <div class="comics-cont">
                 @foreach($comics as $comic)
-                <div class="comic">
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                <div class="card">
+                    <div class="comic-poster">
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" class="poster">
+                    </div>
+                    <div class="comic-title">{{$comic['series']}}</div>
                 </div>
+                
                 @endforeach
             </div>
         </div>
